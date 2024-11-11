@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jual Tikus Putih</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Toko Tikus Putih</h1>
+    </header>
+    <nav>
+        <a href="#products">Produk</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+    <main>
+        <section id="products">
+            <h2>Produk Kami</h2>
+            <div class="product-card">
+                <img src="tikus1.jpg" alt="Tikus Putih - 1">
+                <h3>Tikus Putih - 1</h3>
+                <p>Rp 50.000</p>
+                <button onclick="addToCart('Tikus Putih - 1', 50000)">Beli</button>
+            </div>
+            <div class="product-card">
+                <img src="tikus2.jpg" alt="Tikus Putih - 2">
+                <h3>Tikus Putih - 2</h3>
+                <p>Rp 60.000</p>
+                <button onclick="addToCart('Tikus Putih - 2', 60000)">Beli</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Keranjang Belanja</h2>
+            <ul id="cart-items"></ul>
+            <input type="text" id="customer-name" placeholder="Nama Anda" required>
+            <input type="text" id="customer-address" placeholder="Alamat Anda" required>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+        <section id="about">
+            <h2>Tentang Kami</h2>
+            <p>Kami adalah penyedia tikus putih berkualitas untuk berbagai keperluan.</p>
+        </section>
+        <section id="contact">
+            <h2>Kontak Kami</h2>
+            <p>Email: info@tikusputih.com</p>
+            <p>Telepon: 0812-3456-7890</p>
+        </section>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+</html>
